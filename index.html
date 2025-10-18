@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bintou Diaby — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav wrap">
+    <a class="brand" href="#">
+      <span class="brand-dot">B</span>
+      <span class="brand-text">Bintou Diaby</span>
+    </a>
+
+    <nav class="links">
+      <a href="#accueil" class="link">Accueil</a>
+      <a href="#projets" class="link">Projets</a>
+      <a href="#competences" class="link">Compétences</a>
+      <a href="#contact" class="link">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn ghost" href="login.html">Espace</a>
+      <a class="btn solid" href="#contact">Me contacter</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="wrap" id="accueil">
+    <section class="card hero" aria-label="Hero">
+      <div class="hero-left">
+        <h1 class="title">
+          Bonjour, moi c’est <span class="accent">Bintou Diaby</span>.<br />
+          Étudiante en Licence 3 à l’<b>IIT</b> (Institut Ivoirien de Technologie).
+        </h1>
+        <p class="lead">
+          Je conçois des applications et interfaces modernes.
+          Je maîtrise <b>Flutter</b>, <b>Python</b>, <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>,
+          et l’<b>infographie</b> (Figma).
+        </p>
+
+        <div class="cta-row">
+          <a class="btn cta" href="#projets">Voir mes projets</a>
+          <span class="chip">Toujours ouverte aux opportunités</span>
+        </div>
+
+        <!-- logos clients (optionnel) -->
+        <div class="logos">
+          <span>• Portfolio étudiant — IIT</span>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <!-- anneaux -->
+        <div class="rings">
+          <span class="ring r1"></span>
+          <span class="ring r2"></span>
+          <span class="ring r3"></span>
+          <span class="ring r4"></span>
+          <div class="center">
+            <div class="kpi">6</div>
+            <p class="kpi-sub">Compétences clés</p>
+          </div>
+        </div>
+
+        <!-- 6 logos qui orbitent (CDN Devicon) -->
+        <img class="tech a1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" />
+        <img class="tech a2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <img class="tech a3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        <img class="tech a4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <img class="tech a5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <img class="tech a6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+      </div>
+    </section>
+
+    <!-- SECTION COMPÉTENCES -->
+    <section id="competences" class="features">
+      <div class="feature">
+        <div class="dot"></div>
+        <h3>Apps mobiles (Flutter)</h3>
+        <p>UI réactive, state management, intégration API.</p>
+      </div>
+      <div class="feature">
+        <div class="dot"></div>
+        <h3>Back & Scripts (Python)</h3>
+        <p>Automatisation, APIs légères, data utils.</p>
+      </div>
+      <div class="feature">
+        <div class="dot"></div>
+        <h3>Web (HTML/CSS/JS)</h3>
+        <p>Sites modernes, responsive, animations.</p>
+      </div>
+    </section>
+
+    <!-- PROJETS (placeholder) -->
+    <section id="projets" class="projects">
+      <article class="project">
+        <h3>Projet A</h3>
+        <p>Mini description d’un projet phare (screens, rôle, stack).</p>
+      </article>
+      <article class="project">
+        <h3>Projet B</h3>
+        <p>Mini description d’un second projet (objectif, résultats).</p>
+      </article>
+    </section>
+
+    <!-- FOOTER / GITHUB -->
+    <footer id="contact" class="footer">
+      <p>Retrouvez plus de projets sur mon GitHub :</p>
+      <p>
+        <a class="btn solid" href="https://github.com/USERNAME" target="_blank" rel="noopener">
+          Mon GitHub
+        </a>
+      </p>
+      <small>© 2025 Bintou Diaby — Tous droits réservés.</small>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marketeam — Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <a class="back wrap" href="index.html">← Back to Home</a>
+
+  <main class="wrap">
+    <section class="login-card">
+      <div class="head">
+        <div class="logo">N</div>
+        <h1>Welcome back</h1>
+        <p class="muted">Log in to continue to your workspace</p>
+      </div>
+
+      <form class="form" onsubmit="return false">
+        <label>Email
+          <input type="email" placeholder="you@company.com" required />
+        </label>
+
+        <label>Password
+          <div class="pwd">
+            <input id="pwd" type="password" placeholder="••••••••" required minlength="6" />
+            <button type="button" id="toggle" aria-label="Afficher/Masquer">👁️</button>
+          </div>
+        </label>
+
+        <div class="row">
+          <label class="remember">
+            <input type="checkbox" /> Remember me
+          </label>
+          <a href="#" class="muted">Forgot password?</a>
+        </div>
+
+        <button class="btn solid" id="loginBtn">Log In</button>
+        <p class="muted small">No account? <a href="#" class="link">Create one</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('toggle');
+    const pwd = document.getElementById('pwd');
+    const btn = document.getElementById('loginBtn');
+
+    toggle.addEventListener('click', ()=>{
+      pwd.type = pwd.type === 'password' ? 'text' : 'password';
+    });
+
+    btn.addEventListener('click', ()=>{
+      btn.classList.add('loading');
+      btn.disabled = true;
+      setTimeout(()=>{
+        btn.classList.remove('loading');
+        btn.disabled = false;
+        alert('Demo: authentification simulée ✔️');
+      }, 1200);
+    });
+  </script>
+</body>
+</html>
